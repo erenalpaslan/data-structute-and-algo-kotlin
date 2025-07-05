@@ -84,28 +84,28 @@ import kotlin.text.*
  */
 fun minimumBribes(q: Array<Int>): Unit {
     var bribes = 0
-    var isTooChaotic = false
-    for (i in 0 until q.size) {
-        val nextPersonNumber = q.getOrNull(i + 1)
-        if (nextPersonNumber != null) {
-            val currentPersonNumber = q[i]
-            val currentIndex = i + 1
-            if (currentIndex < currentPersonNumber) {
-                val numberDiff = currentPersonNumber - currentIndex
-                if (numberDiff < 3) {
-                    bribes += 2
-                }else {
-                    isTooChaotic = true
-                    break
-                }
-            }else if (currentPersonNumber > nextPersonNumber) {
-                bribes += 1
-            }
+    var p1 = 1
+    var p2 = 2
+    var p3 = 3
+    for(i in 0 .. q.lastIndex) {
+        if (q[i] == p1) {
+            p1 = p2
+            p2 = p3
+            p3++
+        }else if (q[i] == p2) {
+            bribes++
+            p2 = p3
+            p3++
+        }else if (q[i] == p3) {
+            bribes += 2
+            p3++
         }else {
-            break
+            println("Too chaotic")
+            return
         }
     }
-    println(if (isTooChaotic) "Too chaotic" else bribes)
+
+    println(bribes)
 }
 
 fun main(args: Array<String>) {
