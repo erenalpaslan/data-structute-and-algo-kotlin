@@ -54,7 +54,7 @@ package array.leetcode
 
 
  */
-class Solution {
+class SortColorsSolution {
     fun sortColors(nums: IntArray): Unit {
         val colorMap = HashMap<Int, Int>()
         var currentNum = 0
@@ -109,5 +109,5 @@ class Solution {
  */
 
 fun main() {
-    Solution().sortColors(intArrayOf(2, 0, 2, 1, 1, 0))
+    SortColorsSolution().sortColors(intArrayOf(2, 0, 2, 1, 1, 0))
 }

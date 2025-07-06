@@ -68,7 +68,7 @@ package array.leetcode
      return mergedString
 
  */
-class Solution {
+class MergeStringsAlternatelySolution {
     fun mergeAlternately(word1: String, word2: String): String {
         val mergedString = StringBuilder()
         for (i in 0 until maxOf(word1.length, word2.length)) {
