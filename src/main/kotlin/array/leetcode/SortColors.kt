@@ -71,7 +71,7 @@ class Solution {
                 nums[currentIndex] = currentNum
                 colorMap.put(currentNum, value - 1)
                 currentIndex++
-            }else {
+            } else {
                 currentNum++
             }
         }
@@ -80,6 +80,34 @@ class Solution {
     }
 }
 
+/*
+class Solution {
+    fun sortColors(nums: IntArray): Unit {
+        var l = 0
+        var mid = 0
+        var r = nums.size - 1
+        while (mid <= r) {
+            when (nums[mid]) {
+                0 -> {
+                    nums[l] = nums[mid].also { nums[mid] = nums[l] }
+                    l++
+                    mid++
+                }
+
+                1 -> {
+                    mid++
+                }
+
+                2 -> {
+                    nums[r] = nums[mid].also { nums[mid] = nums[r] }
+                    r--
+                }
+            }
+        }
+    }
+}
+ */
+
 fun main() {
-    Solution().sortColors(intArrayOf(2,0,2,1,1,0))
+    Solution().sortColors(intArrayOf(2, 0, 2, 1, 1, 0))
 }
