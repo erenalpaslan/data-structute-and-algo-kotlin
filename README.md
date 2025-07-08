@@ -1,1 +1,1 @@
-# data-structute-and-algo-kotlin
+# Data structures and Algorithm Notes for Kotlin
