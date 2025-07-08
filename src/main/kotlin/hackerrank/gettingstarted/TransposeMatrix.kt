@@ -1,4 +1,4 @@
-package gettingstarted
+package hackerrank.gettingstarted
 
 /**
  * 867. Transpose Matrix

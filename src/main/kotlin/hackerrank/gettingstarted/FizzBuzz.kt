@@ -1,4 +1,4 @@
-package gettingstarted
+package hackerrank.gettingstarted
 
 /**
  * 412. Fizz Buzz

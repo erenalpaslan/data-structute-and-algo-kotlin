@@ -1,4 +1,4 @@
-package gettingstarted
+package hackerrank.gettingstarted
 
 /**
  * 657. Robot Return to Origin
