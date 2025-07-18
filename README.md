@@ -61,8 +61,8 @@ src/main/kotlin/
 ### Setup
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/data-structute-and-algo-kotlin.git
-   cd data-structute-and-algo-kotlin
+   git clone https://github.com/erenalpaslan/data-structures-and-algorithm-kotlin.git
+   cd data-structures-and-algorithm-kotlin
    ```
 
 2. Build the project:
